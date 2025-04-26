@@ -1,0 +1,14 @@
+# This function reverses a string manually without using [::-1] or built-in methods.
+
+def reverse_string(s):
+   
+    # Loop the original string from the end to the start
+    index = len(s) - 1
+    while index >= 0:
+        reversed_s += s[index]  # Add each character to the reversed string
+        index -= 1
+    return reversed_s
+
+# Example of how its used
+text = "Python"
+print("Reversed string:", reverse_string(text))
